@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Sidu</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+<div class="container">
+    <h2>Daftar Barang</h2>
+    <input type="text" id="namaBarang" placeholder="Nama Barang">
+    <input type="number" id="hargaBarang" placeholder="Harga Barang">
+    <input type="number" id="stokBarang" placeholder="Stok Barang">
+    <button onclick="tambahBarang()">Tambah Barang</button>
+    <input type="text" id="searchBarang" placeholder="Cari Barang..." oninput="searchBarang()">
+    <table>
+        <thead>
+        <tr>
+            <th>Nama Barang</th>
+            <th>Harga</th>
+            <th>Stok</th>
+            <th>Aksi</th>
+        </tr>
+        </thead>
+        <tbody id="barangList"></tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
